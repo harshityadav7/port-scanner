@@ -29,6 +29,7 @@ def scan_port(ip, port):
         print(f"Error scanning port {port}: {e}")
 
 def main():
+    display_banner()
     parser = argparse.ArgumentParser(description="Port Scanner")
     parser.add_argument("ip", type=str, help="IP address to scan")
     parser.add_argument("--start_port", type=int, default=1, help="Start port range (default: 1)")
@@ -46,4 +47,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    display_banner()
