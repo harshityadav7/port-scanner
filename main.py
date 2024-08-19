@@ -16,7 +16,6 @@ def display_banner():
                                                                                             
     """
     print(banner)
-#ignoreit
 
 def scan_port(ip, port):
     try:
